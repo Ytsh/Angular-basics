@@ -12,6 +12,7 @@ import {FormsModule} from '@angular/forms';
 import { SpecialDirective } from './directives/special.directive';
 import { DirectiveComponent } from './directive/directive.component';
 import { CardsWrapperComponent } from './forms/cards-wrapper/cards-wrapper.component';
+import { TableComponent } from './components/table/table.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { CardsWrapperComponent } from './forms/cards-wrapper/cards-wrapper.compo
     CardsComponent,
     SpecialDirective,
     DirectiveComponent,
-    CardsWrapperComponent
+    CardsWrapperComponent,
+    TableComponent
   ],
   imports: [
     BrowserModule,

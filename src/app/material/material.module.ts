@@ -20,7 +20,7 @@ import {} from '@angular/material/card';
     MatTableModule,
     MatPaginatorModule,
     MatTooltipModule,
-    MatSortModule
+    MatSortModule,
   ]
 })
 export class MaterialModule { }
