@@ -1,0 +1,8 @@
+<p>directive works!</p>
+<!-- hello -->
+<span>Username</span>
+<input type="text" [(ngModel)] = username (change)="onchange()" placeholder = {{username}} >
+<br>
+<span>{{username}}</span>
+<br>
+<button [disabled] = "isenabled" (click)="reset()" class="btn-btn primary">Reset</button>

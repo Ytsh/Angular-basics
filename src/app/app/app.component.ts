@@ -7,13 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'myfirstapp';
-  cardsTitle: string[] = ['Maia', 'Dylan', 'Minoru', 'Amarachi', 'Ceallagh'];
-
-  addCard(title: string) {
-    this.cardsTitle.push(title);
-    console.log(this.cardsTitle);
-  }
+  active = false;
   constructor(){
 
   }
+   
+  test = ()=>console.log("hello")
+
+
 }
