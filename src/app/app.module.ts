@@ -9,10 +9,12 @@ import {MatCardModule} from '@angular/material/card';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {FormsModule} from '@angular/forms';
-import { SpecialDirective } from './directives/special.directive';
+import { SpecialDirective } from './components/directives/special.directive';
 import { DirectiveComponent } from './directive/directive.component';
 import { CardsWrapperComponent } from './forms/cards-wrapper/cards-wrapper.component';
 import { TableComponent } from './components/table/table.component';
+// import {MatTableDataSource} from '@angular/material/table';
+// import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import { TableComponent } from './components/table/table.component';
     SpecialDirective,
     DirectiveComponent,
     CardsWrapperComponent,
-    TableComponent
+    TableComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -31,6 +34,7 @@ import { TableComponent } from './components/table/table.component';
     MatFormFieldModule,
     MatInputModule,
     FormsModule,
+    // MatTableDataSource,    
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -13,6 +13,12 @@ export class AppComponent {
     this.cardsTitle.push(title);
     console.log(this.cardsTitle);
   }
+  deleteCard(id: number){
+    // console.log("HI");
+    this.cardsTitle.splice(id, 1);
+    console.log(this.cardsTitle);
+    
+  }
   constructor(){
 
   }

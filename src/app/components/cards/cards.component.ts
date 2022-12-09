@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
+
 @Component({
   selector: 'app-cards',
   templateUrl: './cards.component.html',
@@ -17,12 +18,18 @@ export class CardsComponent implements OnInit {
   port: number = 4200;
 
   @Input() titles: string[] = [];
-  cardsTitle: string[] = ['Maia', 'Dylan', 'Minoru', 'Amarachi', 'Ceallagh'];
+  // cardsTitle: string[] = ['Maia', 'Dylan', 'Minoru', 'Amarachi', 'Ceallagh'];
 
   @Output() titleEvent$ = new EventEmitter<string>();
 
+  @Output() titleEventDelete$ = new EventEmitter<number>();
+
   onAddCard(title: string): void {
     this.titleEvent$.emit(title);
+  }
+
+  onDeleteCard(id: number): void {
+    this.titleEventDelete$.emit(id);
   }
   
   onLike(): void {
@@ -36,6 +43,7 @@ export class CardsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    // console.log("component has been initialized!")
   }
 
 }
